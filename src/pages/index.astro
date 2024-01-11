@@ -5,12 +5,13 @@ import LinkedInIcon from "../icons/LinkedInIcon.astro"
 import GitHubIcon from "../icons/GitHubIcon.astro"
 import MailIcon from "../icons/MailIcon.astro"
 import SocialPill from "../components/SocialPill.astro"
+import Experience from "../components/Experience.astro"
 ---
 
 
 <Layout title="Victor Maye" description="portfolio web" >
-    <main class="text-white">
-        <section class="w-full lg:max-w-[740px] xl:max-w-[946px] mx-auto py-24">
+    <main class="text-white px-3 w-full lg:max-w-[740px] xl:max-w-[906px] mx-auto overflow-y-auto">
+        <section class=" py-24">
             <h1 class="text-5xl font-bold flex gap-4 pb-5">Hola, soy Victor <a class="flex items-center justify-center" target="_blank" rel="noopener" href="https://www.linkedin.com/in/victormaye-data-scientist/"><Badge>Disponible para trabajar</Badge></a></h1>
             <h2 class="text-xl opacity-85">
                 <span class="text-yellow-300">Desarrollador Web</span>  con un ojo para el diseño y la creatividad. <span class="text-blue-400"> Transformo ideas en interfaces atractivas a través de código limpio y diseño elegante.</span> Trabajo con HTML, CSS y JavaScript, además de frameworks como React. Creo en la usabilidad y en crear <span class="text-red-300 font-bold">experiencias impactantes</span> para los usuarios.
@@ -30,5 +31,6 @@ import SocialPill from "../components/SocialPill.astro"
                 </SocialPill>
             </nav>
         </section>
+        <Experience />
     </main>
 </Layout>
