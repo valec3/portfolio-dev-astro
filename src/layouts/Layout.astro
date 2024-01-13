@@ -41,7 +41,7 @@ const { description, title } = Astro.props
 
     html{
         font-family: 'Onest Variable', sans-serif;
-        behavior: smooth-scroll;
+        scroll-behavior: smooth;
     }
 
     body{
@@ -52,4 +52,9 @@ const { description, title } = Astro.props
         align-items: center;
     }
 
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
 </style>
