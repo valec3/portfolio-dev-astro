@@ -23,14 +23,14 @@ import TitleSection from "./TitleSection.astro"
 ---
 
 
-<section class="py-6 pb-10" id="experiencia">
-    <TitleSection title="Experience">
+<section class="py-6 pb-10" id="experience">
+    <TitleSection title="Experiencia">
         <BriefcaseIcon class="w-6 h-6 mr-2" />
     </TitleSection>
     <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-2">
         {
             EXPERIENCE.map((item, index) => (
-                <ExperienceItem {...item} index={index} />
+                <ExperienceItem {...item}/>
             ))
         }
         
