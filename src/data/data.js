@@ -46,7 +46,7 @@ const ICONS_CONFIG = {
     },
     FASTAPI: {
         icon: FastApiIcon,
-        styles: 'bg-blue-200',
+        styles: 'bg-[#009485]/60',
         text: 'FastAPI',
     },
     RECHARTS: {
@@ -75,9 +75,10 @@ export const projectsData = [
             ICONS_CONFIG.RECHARTS,
         ],
         description:
-            'Billetera Virtual para la transacción de dinero entre usuarios. Brindando un dashboard para el control de las transacciones y el saldo de la cuenta. Desarrollada po a un equipo de 3 personas en una emulación laboral de No Country',
+            'Billetera Virtual para la transacción de dinero entre usuarios. Brindando un dashboard para el control de las transacciones y el saldo de la cuenta. Desarrollado por un equipo de 3 personas en una emulación laboral de No Country',
         img: import('../assets/WarrenBank.jpg'),
         link: 'https://anderson.d301togxhux3st.amplifyapp.com/',
+        github: 'https://github.com/No-Country/c14-10-n-node-react',
     },
     {
         id: 2,
