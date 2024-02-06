@@ -1,7 +1,52 @@
 ---
 import TitleSection from "./TitleSection.astro"
+
+const dataEducation = [ 
+    {
+        id: 1,
+        title: "Ingenieria Estadistica e Informatica",
+        institution: "Universidad Nacional del Altiplano - Puno",
+        date: "2021 - 2026",
+        description: "Ingenieria en Sistemas de Informacion, con enfasis en desarrollo de software y sistemas de informacion."
+    },
+    {
+        id: 2,
+        title: "Analisis de datos con Python",
+        institution: "Coursera - IBM",
+        date: "2020 - 2021",
+        description: "Curso de analisis de datos con Python, con enfasis en analisis de datos, visualizacion de datos y machine learning."
+    },
+    {
+        id: 3,
+        title: "Desarrollo de Aplicaciones Moviles",
+        institution: "Platzi",
+        date: "2020 - 2021",
+        description: "Curso de desarrollo de aplicaciones moviles, con enfasis en desarrollo de aplicaciones moviles con React Native."
+    },
+    {
+        id: 4,
+        title: "Desarrollo de Aplicaciones Web",
+        institution: "Platzi",
+        date: "2020 - 2021",
+        description: "Curso de desarrollo de aplicaciones web, con enfasis en desarrollo de aplicaciones web con React, Node.js y MongoDB."
+    }
+]
+
 ---
-<section>
+<section class="mt-6">
     <TitleSection title="Educacion" />
-    <div></div>
+    <div>
+        <ul class="list-none flex flex-col gap-6">
+            {
+                dataEducation.map((education) => (
+                    <li class="mb-4">
+                        <h3 class="text-xl font-bold text-blue-400">{education.title}</h3>
+                        <p class="text-sm font-semibold text-slate-400">{education.institution}</p>
+                        <p class="text-sm font-light italic">{education.date}</p>
+                        <p class="text-sm font-light">{education.description}</p>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
 </section>

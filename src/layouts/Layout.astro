@@ -2,7 +2,6 @@
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import "@fontsource-variable/onest"
-import { Analytics } from '@vercel/analytics/react';
 interface Props {
     title: string
     description: string
@@ -34,7 +33,6 @@ const { description, title } = Astro.props
         <slot/>
         <Footer />
     </body>
-    <Analytics/>
 </html>
 
 
