@@ -18,7 +18,7 @@ console.log(projectsData[0].languages[0].text);
                     <div>
                         <h3 class="text-xl md:text-2xl font-bold text-blue-500 mb-6">{project.title}</h3>
                         <p>{project.description}</p>
-                        <ul class="my-2 flex text-white mb-6">
+                        <ul class="my-2 flex  flex-wrap text-white mb-6">
                             {
                                 project.languages.map(({text,icon:Icon,styles}) => (
                                     <li class={`rounded-full px-4 py-1 text-sm font-semibold mr-2 mt-2 flex items-center gap-x-2 ${styles}`}>
@@ -44,5 +44,10 @@ console.log(projectsData[0].languages[0].text);
                 </div>
             ))
         }
+    </div>
+    <div class="text-center mt-7">
+        <a href="https://github.com/valec3#proyectos-desarrollo-web-front-end" target="_blank" class="text-yellow-400 hover:text-yellow-600 group text-center text-xl">
+            Ver más proyectos <span class="relative group-hover:ml-2 transition-all duration-200">&rarr;</span>
+        </a>
     </div>
 </section>
