@@ -5,8 +5,15 @@ const EXPERIENCE = [
         company: 'No Country',
         location: 'Lima, Peru',
         date: '2023 - Presente',
-        description: 'Durante mi participación en No Country, asumí el rol de Frontend en equipos multidisciplinarios, participando en emulaciones de entornos laborales reales. Mi responsabilidad consistía en desarrollar soluciones web innovadoras utilizando React. Esta experiencia me brindó la oportunidad de demostrar mis habilidades técnicas y aprender a comunicarme de manera efectiva en un equipo colaborativo.',
+        description: 'En No Country, asumí el rol de Frontend y Backend en equipos multidisciplinarios, participando en proyectos que simulaban entornos laborales reales. Me encargué de desarrollar principalmente 3 aplicaciones: Una aplicación de gestión de torneos de futbol, una billetera virtual y una aplicación de películas. Alguna de mis tareas era:',
         tags: ['React', 'Tailwind CSS', 'Jira', 'JavaScript', 'HTML', 'CSS'],
+        responsabilities: [
+            "Implementar la lógica del negocio y la funcionalidad de las aplicaciones utilizando tecnologías frontend y backend como React, Tailwind CSS, TypeScript, Node.js, y Express.js.",
+            "Colaborar estrechamente con diseñadores, desarrolladores y otros miembros del equipo en la planificación y ejecución de las tareas del sprint.",
+            "Desarrollar y mantener más de 30 componentes de interfaz de usuario de alta calidad, en línea con los estándares de diseño y usabilidad, como parte de las tareas diarias del sprint.",
+            "Optimizar el rendimiento de las aplicaciones mediante la identificación y solución de problemas de rendimiento, seguridad y compatibilidad, en un entorno de desarrollo ágil.",
+            "Implementar prácticas de desarrollo responsivo para garantizar la compatibilidad y la experiencia de usuario óptima en dispositivos móviles, lo que llevó a un aumento del 25% en la accesibilidad de la aplicación."
+        ]
     },
     {
         title: 'Desarrollador Independiente',
@@ -15,6 +22,12 @@ const EXPERIENCE = [
         date: '2023 - Presente',
         description: 'Durante mi período como Desarrollador Independiente, he creado aplicativos de predicción basados en machine learning y desarrollado aplicaciones web . Mi experiencia se centra en la implementación de soluciones avanzadas que aprovechan la potencia de la inteligencia artificial para proporcionar resultados precisos y eficientes.',
         tags: ['React', 'Tailwind CSS', 'Figma', 'JavaScript', 'HTML', 'CSS'],
+        responsabilities: [
+            'Desarrollo de aplicaciones web utilizando React y Astro.',
+            'Creación de modelos de machine learning para crear soluciones en el ámbito de la salud y la educación.',
+            'Crear reportes y visualizaciones de datos utilizando herramientas como Power BI y Tableau.',
+            'Coordinar con el cliente para entender sus necesidades y proponer soluciones que se ajusten a sus requerimientos.'
+        ]
     }
 ]
 import ExperienceItem from "./ExperienceItem.astro"
@@ -22,14 +35,13 @@ import BriefcaseIcon from "../icons/BriefcaseIcon.astro"
 import TitleSection from "./TitleSection.astro"
 ---
 
-
 <section class="py-6 pb-10" id="experience">
     <TitleSection title="Experiencia">
         <BriefcaseIcon class="w-6 h-6 mr-2" />
     </TitleSection>
     <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-2">
         {
-            EXPERIENCE.map((item, index) => (
+            EXPERIENCE.map((item) => (
                 <ExperienceItem {...item}/>
             ))
         }

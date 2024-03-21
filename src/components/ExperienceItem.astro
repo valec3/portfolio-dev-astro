@@ -4,9 +4,10 @@ export interface Props {
     title: string
     description: string
     tags: string[]
-    company: string
+    company: string,
+    responsabilities: string[]
 }
-const {date, title, description, tags, company} = Astro.props
+const {date, title, description, tags, company,responsabilities} = Astro.props
 ---
 <li class="mb-10 ms-4">
     <div
@@ -33,6 +34,16 @@ const {date, title, description, tags, company} = Astro.props
             >
                 {tag}
             </a>
+            </li>
+        ))
+        }
+    </ul>
+    <ul class="mt-4">
+        {
+        responsabilities?.map((responsability) => (
+            <li class="text-gray-500 dark:text-gray-400 text-pretty mb-2">
+            &bull;
+            {responsability}
             </li>
         ))
         }
