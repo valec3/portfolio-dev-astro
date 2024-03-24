@@ -1,0 +1,25 @@
+---
+
+---
+<script>
+    const API_URL_LIST = [
+        'https://api-warrenbank.onrender.com',
+        'https://streamview.onrender.com',
+        'https://model-api-ha.onrender.com'
+    ];
+    // call to the api's endpoint of the projects for the ready 
+    const startServers = async () => {
+        try {
+            // Itera sobre cada URL y realiza una solicitud GET a cada una
+            for (const url of API_URL_LIST) {
+                const response = await fetch(url);
+            }
+        } catch (error) {
+            console.error('Error al intentar encender los servidores:', error.message);
+        }
+    };
+
+// Llama a la función para iniciar las solicitudes
+    startServers();
+    console.warn("Se han llamado a los endpoints de los proyectos\n(Posibles errores en la consola del navegador)")
+</script>
