@@ -21,6 +21,14 @@ const { description, title } = Astro.props
         <meta name="generator" content={Astro.generator} />
         <meta name="google-site-verification" content="kCMoIHVeP8yAxBfcb4nBHV0iPztRxmSyOhuKQ7eM4Xg" />
         <title>{title}</title>
+        <!-- og -->
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://portfolio-dev-astro.vercel.app"/>
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:site_name" content="Portfolio" />
+        <meta property="og:image" content='/Portfolio.jpg' />
     </head>
 
     <body class="relative text-black dark:text-white">
