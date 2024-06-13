@@ -1,10 +1,7 @@
 ---
 import TitleSection from "./TitleSection.astro";
 import { projectsData } from "../data/data";
-import { Image } from "astro:assets";
-import GithubIcon from "../icons/GithubIcon.astro";
-
-console.log(projectsData[0].languages[0].text);
+import ProjectCard from "./ProjectCard.astro";
 ---
 
 <section id="projects">
@@ -12,40 +9,12 @@ console.log(projectsData[0].languages[0].text);
     <div class="flex flex-col gap-16">
         {
             projectsData.map((project) => (
-                <div class="flex flex-col gap-6 ">
-                    <Image src={project.img} alt={project.title} class="w-full object-center object-cover aspect-video bg-slate-800"/>
-                    <div>
-                        <h3 class="text-xl md:text-2xl font-bold text-blue-500 mb-6">{project.title}</h3>
-                        <p>{project.description}</p>
-                        <ul class="my-2 flex  flex-wrap text-white mb-6">
-                            {
-                                project.languages.map(({text,icon:Icon,styles}) => (
-                                    <li class={`rounded-full px-4 py-1 text-sm font-semibold mr-2 mt-2 flex items-center gap-x-2 ${styles}`}>
-                                        <Icon class="size-6"/>{text}
-                                    </li>
-                                ))
-                            }    
-                        </ul>
-                        <div class="flex items-center gap-5">
-                            <a href={project.github} class="flex cursor-pointer">
-                                <GithubIcon class="size-6 ml-4"/>
-                            </a>    
-                            <a 
-                                href={project.link} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                class="cursor-pointer text-yellow-400 hover:text-yellow-600 group"
-                            >
-                                Ver proyecto <span class="relative group-hover:ml-2 transition-all duration-200">&rarr;</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <ProjectCard project={project} />
             ))
         }
     </div>
     <div class="text-center mt-7">
-        <a href="https://github.com/valec3#proyectos-desarrollo-web-front-end" target="_blank" class="text-yellow-400 hover:text-yellow-600 group text-center text-xl">
+        <a href="/projects" class="text-yellow-400 hover:text-yellow-600 group text-center text-xl">
             Ver más proyectos <span class="relative group-hover:ml-2 transition-all duration-200">&rarr;</span>
         </a>
     </div>

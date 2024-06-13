@@ -64,19 +64,18 @@ const ICONS_CONFIG = {
 export const projectsData = [
     {
         id: 1,
-        title: 'Billeta Virtual',
+        title: 'Billetera Virtual',
         date: '2021',
         languages: [
             ICONS_CONFIG.REACT,
             ICONS_CONFIG.NODE,
-            ICONS_CONFIG.TAILWIND,
             ICONS_CONFIG.EXPRESS,
             ICONS_CONFIG.MONGODB,
-            ICONS_CONFIG.RECHARTS,
+            ICONS_CONFIG.TAILWIND,
         ],
         description:
-            'Billetera Virtual para la transacción de dinero entre usuarios. Brindando un dashboard para el control de las transacciones y el saldo de la cuenta. Desarrollado por un equipo de 3 personas en una emulación laboral de No Country',
-        img: import('../assets/WarrenBank.jpg'),
+            'Billetera Virtual para la transacción de dinero entre usuarios. Brindando un dashboard para el control de las transacciones y el saldo de la cuenta.',
+        img: import('../assets/WarrenBank.png'),
         link: 'https://anderson.d301togxhux3st.amplifyapp.com/',
         github: 'https://github.com/No-Country/c14-10-n-node-react',
     },
