@@ -8,6 +8,7 @@ import SocialPill from "../components/SocialPill.astro"
 import Experience from "../components/Experience.astro"
 import Projects from "../components/Projects.astro"
 import Education from "../components/Education.astro"
+import Contacto from "../components/Contacto.astro"
 import HelpApi from "../components/HelpApi.astro"
 ---
 
@@ -15,7 +16,7 @@ import HelpApi from "../components/HelpApi.astro"
 <Layout title="Victor Maye developer" description="Portfolio de Victor Maye, desarrollador web y data scientist">
     <main class="text-slate-900 dark:text-white px-3 w-full lg:max-w-[740px] xl:max-w-[900px] 2xl:max-w-[1000px] mx-auto overflow-y-auto">
         <section class=" py-24" id="about">
-            <h1 class="text-5xl font-bold flex gap-4 pb-5">Hola, soy Victor <a class="flex items-center justify-center" target="_blank" rel="noopener" href="https://www.linkedin.com/in/victormaye-data-scientist/"><Badge>Disponible para trabajar</Badge></a></h1>
+            <h1 class="text-5xl font-bold flex gap-10 pb-5">Hola, soy Victor <a class="flex items-center justify-center" target="_blank" rel="noopener" href="https://www.linkedin.com/in/victormaye-data-scientist/"><Badge>Disponible para trabajar</Badge></a></h1>
             <h2 class="text-xl opacity-85">
                 <span class="text-yellow-500 dark:text-yellow-300">Desarrollador Web</span>  con un ojo para el diseño y la creatividad. <span class="text-blue-400"> Transformo ideas en interfaces atractivas a través de código limpio y diseño elegante.</span> Trabajo con HTML, CSS y JavaScript, además de frameworks como React. Creo en la usabilidad y en crear <span class="text-red-600 dark:text-red-300 font-bold">experiencias impactantes</span> para los usuarios.
             </h2>
@@ -37,6 +38,7 @@ import HelpApi from "../components/HelpApi.astro"
         <Experience />
         <Projects />
         <Education/>
+        <Contacto/>
         <HelpApi/>
     </main>
 </Layout>

@@ -92,7 +92,7 @@ export const projectsData = [
         ],
         description:
             'Aplicación que facilita al usuario saber en que plataformas de streaming se encuentra disponible una película o serie.',
-        img: import('../assets/StreamView.jpg'),
+        img: import('../assets/StreamView.png'),
         link: 'https://s12-07-n-node-react.vercel.app/',
     },
     {
@@ -109,5 +109,49 @@ export const projectsData = [
             'Aplicacion web que permite al usuario conocer su riesgo de sufrir un ataque al corazón usando un algoritmo de machine learning.',
         img: import('../assets/heart-attack.png'),
         link: 'https://heart-attack-steel.vercel.app/',
+    },
+    {
+        id: 4,
+        title: 'Nike Web Clon',
+        date: '2023',
+        languages: [ICONS_CONFIG.REACT, ICONS_CONFIG.TAILWIND],
+        description:
+            'Clon de la página web de Nike, con el objetivo de mejorar mis habilidades en el desarrollo web.',
+        img: import('../assets/NikeWebClone.png'),
+        link: 'https://nike-web-clon.vercel.app',
+        github: 'https://github.com/valec3/Nike-web-clon',
+    },
+    {
+        id: 5,
+        title: 'AutoFix',
+        date: '2023',
+        languages: [ICONS_CONFIG.REACT, ICONS_CONFIG.TAILWIND],
+        description:
+            'Landin page de un taller de reparación de autos, con distintas secciones para mostrar los servicios que se ofrecen',
+        img: import('../assets/AutoFix.png'),
+        link: 'https://valec3.github.io/Repair_Auto',
+        github: 'https://github.com/valec3/Repair_Auto',
+    },
+    {
+        id: 6,
+        title: 'SportPlay',
+        date: '2023',
+        languages: [ICONS_CONFIG.REACT, ICONS_CONFIG.TAILWIND],
+        description:
+            'Aplicacion para gestionar torneos de futbol, con la posibilidad de crear torneos, equipos y jugadores.',
+        img: import('../assets/SportPlay.png'),
+        link: 'https://spor7play.vercel.app',
+        github: 'https://github.com/valec3/SportPlay',
+    },
+    {
+        id: 7,
+        title: 'Triplt: Travel App',
+        date: '2023',
+        languages: [ICONS_CONFIG.REACT, ICONS_CONFIG.TAILWIND],
+        description:
+            'Landin page de una aplicación de viajes, con distintas secciones para mostrar los servicios que se ofrecen',
+        img: import('../assets/Triplt.png'),
+        link: 'https://valec3.github.io/invent_website_app_TripIt',
+        github: 'https://github.com/valec3/invent_website_app_TripIt',
     },
 ];

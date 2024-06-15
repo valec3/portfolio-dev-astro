@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard.astro";
     <TitleSection title="Proyectos" />
     <div class="flex flex-col gap-16">
         {
-            projectsData.map((project) => (
+            projectsData.slice(0, 3).map((project) => (
                 <ProjectCard project={project} />
             ))
         }

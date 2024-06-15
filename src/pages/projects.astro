@@ -1,25 +1,25 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import SimpleLayout from "../layouts/SimpleLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 import { projectsData } from "../data/data";
 ---
 
-<section>
-    <div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-300 dark:bg-neutral-950
-        bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-        dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-    >
-    </div>
-    <div class="w-full max-w-[1200px] mx-auto py-8">
-        <a href="/" class="text-yellow-300 font-bold text-xl">
-            {
-                '<- Regresar al inicio'
-            }
-        </a>
-        <h2 class="text-2xl font-bold text-center py-10 text-white">
-            En proceso
-        </h2>
-        <div>
-            
+<SimpleLayout title="Proyectos" description="Proyectos de desarrollo web y móvil realizados por mí.">
+    <section class="overflow-y-auto h-screen">
+        <div class="w-full max-w-[1600px] mx-auto py-8 px-4">
+            <a href="/" class="text-yellow-300 font-bold text-xl">
+                ⭠ Regresar al inicio
+            </a>
+            <h2 class="text-4xl font-bold text-center py-10 text-white">
+                Proyectos
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6 text-white">
+                {
+                    projectsData.map((project, index) => (
+                        <ProjectCard project={project} key={index} />
+                    ))
+                }
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</SimpleLayout>
